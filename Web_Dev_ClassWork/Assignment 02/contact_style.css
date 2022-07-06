@@ -1,0 +1,43 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+.form-01{
+    margin: 150px;
+    margin-left: 400px;
+    color: white;
+    width: auto;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+.form-01 div{
+    display: flex;
+    padding: 15px;
+}
+.form-01 div p{
+    font-size: 20px;  
+    color: orange;
+    word-spacing: 1px;
+}
+input, textarea{
+    margin-left: 50px;
+    padding-left: 10px;
+    text-align: justify;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+    width: 100px;
+    background-color: #ff8800;
+    color: white;
+}

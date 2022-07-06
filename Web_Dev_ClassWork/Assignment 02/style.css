@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+body {
+  background-color: blueviolet;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+}
+header h2,
+li,
+a,
+button {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+header h2 {
+  color: rgb(255, 153, 0);
+  margin-right: auto;
+  font-style: bold;
+  font-size: 30px;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 10px 0px;
+}
+.nav_links li:hover {
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 153, 0);
+}
+
+header #btn {
+  font-size: 18px;
+  margin-left: 30px;
+  padding: 8px 18px;
+  border-radius: 50px;
+  background-color: rgb(255, 153, 0);
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+
+#btn:hover {
+  color: rgb(0, 0, 0);
+}
+
+.section-01 {
+  margin-top: 120px;
+  text-align: center;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-01 .quote {
+  border-radius: 70px;
+  color: rgba(255, 255, 255, 0.856);
+  justify-content: center;
+  padding: 20px 50px;
+  line-height: 25px;
+  position: relative;
+  background-color: rgb(54, 54, 54);
+  width: 500px;
+  height: 170px;
+}
+
+.quote p {
+  margin-top: 110px;
+}
+
+.section-01 .quote img {
+  background-color: white;
+  padding: 9px;
+  position: absolute;
+  top: -45%;
+  transform: translateX(-50%);
+  width: 150px;
+  border-radius: 50%;
+}
+#resume {
+  font-family: "Parisienne", cursive;
+  text-align: center;
+  color: rgb(255, 153, 0);
+  font-size: 30px;
+}
+.section-02 {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(255, 153, 0);
+  border-radius: 20px;
+}
+.section-02 .div-01,
+.div-02 {
+  margin: 5px;
+  padding: 10px;
+  height: auto;
+  max-height: 1000px;
+  min-height: 100px;
+}
+.div-01 {
+  width: 30%;
+  background-color: rgb(2, 87, 121);
+  color: white;
+}
+
+.div-02 {
+  text-align: justify;
+  background-color: white;
+  width: 60%;
+}
+.section-02 h1 {
+  color: rgb(2, 87, 121);
+}
+.section-02 p {
+  color: rgb(36, 36, 36);
+}
+.title {
+  padding: 10px 0px 0px 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  color: rgb(219, 219, 219);
+  list-style: none;
+  padding: 2px;
+  margin-left: auto;
+}

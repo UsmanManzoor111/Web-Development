@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts
+    </title>
+    <link rel="stylesheet" href="contact_style.css" />
+  </head>
+  <body>
+    <form class="form-01">
+      <div>
+        <p>Sender Name</p>
+        <br />
+        <input
+          type="text"
+          id="name"
+          required=""
+          oninput="valid_name()"
+          name="senderName"
+          placeholder="Enter your Name"
+        />
+      </div>
+      <p id="sender"></p>
+      <div>
+        <p>Email</p>
+        <br />
+        <input
+          type="email"
+          oninput="valid_email()"
+          required=""
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <p id="message"></p>
+      <div>
+        <p>Message</p>
+        <br />
+        <textarea
+          type="text"
+          required=""
+          oninput="valid_message()"
+          id="Message"
+          name="senderName"
+          placeholder="Enter your Name"
+        >
+        </textarea>
+      </div>
+      <p id="print"></p>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <script type="text/javascript" src="contactme.js"></script>
+</html>

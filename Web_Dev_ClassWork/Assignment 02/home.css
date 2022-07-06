@@ -1,0 +1,32 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url('1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+section{
+    border-radius: 10%;
+    padding: 10px;
+    background-image: url('2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 400px;
+    margin-top: 100px;
+    width: max-content;
+}
+div{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+    word-spacing: 1px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

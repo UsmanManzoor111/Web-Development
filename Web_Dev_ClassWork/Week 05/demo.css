@@ -1,0 +1,11 @@
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid green;
+    background: yellow;
+    box-shadow: 2px 2px 4px blueviolet;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer; 
+}

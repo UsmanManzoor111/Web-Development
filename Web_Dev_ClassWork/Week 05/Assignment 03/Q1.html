@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 01</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter number" oninput="func()" />
+    <span id="span"></span>
+
+    <script>
+      const body = document.body;
+
+      function func() {
+        var input = document.querySelector("input");
+        var num = document.querySelector("#span");
+        if (input.value % 2 == 0) {
+          num.innerText = "Even";
+        } else {
+          num.innerText = "Odd";
+        }
+      }
+    </script>
+  </body>
+</html>

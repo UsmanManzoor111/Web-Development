@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML basics</title>
+        <style>
+            body{
+                background-color: rgb(185, 0, 0);
+            }
+            table,tr,td,th
+            {
+                text-align: center;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: teal;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            th{
+                background-color: rgb(24, 211, 33) ;
+            }
+            td{
+                background-color: rgb(194, 26, 124);
+            }
+            
+            
+        </style>
+    </head>
+    <a href="Blog.html"> Go to index</a>
+    <hr>
+    <body>
+        <!-- Headings -->
+        <h1> headings one</h1>
+        <h2> headings two</h2>
+        <h3> headings three</h3>
+        <h4> headings four</h4>
+        <h5> headings five</h5>
+        <h6> headings six</h6>
+        <hr>
+        <!-- paragraph -->
+        <p>
+            my name is <strong>USMAN</strong>, and i am <strong><a href="https://www.google.com/ " target = "_blank">Web Developer</a></strong>.I am doing BS(CS) from <em>FAST Nuces</em>
+        </p>
+        <p>
+            A paragraph is a group of related sentences that support one <strong>main idea</strong>. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next <strong>paragraph or section</strong>
+        </p>
+        <hr>
+        <!-- Lists -->
+        <ul>
+            <li>
+            List items 
+            </li>
+            <li>
+            List items 
+            </li>
+            <li>
+            List items 
+            </li>
+        </ul>
+        <ol>
+            <li>
+            List items 
+            </li>
+            <li>
+            List items 
+            </li>
+            <li>
+            List items 
+            </li>
+        </ol>
+        <hr>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0uurZYdmA6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div>
+            <video src="../videos/Video.mp4" controls="" loop="" poster="images/thumbnail.png" width="310" height="163"> 
+            </video>
+        </div>
+        <br>
+
+        <!-- Tables -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Usman Manzoor</td>
+                    <td>P19-0068</td>
+                    <td>Computer Science</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td> Tayyab </td>
+                    <td>P19-0348</td>
+                    <td>Computer Science</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td>Umer </td>
+                    <td>P19-0218</td>
+                    <td>Electrical Engineering</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>Ayyan </td>
+                    <td>P19-0218</td>
+                    <td>Electrical Engineering</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td>Haris </td>
+                    <td>P19-0218</td>
+                    <td>Electrical Engineering</td>
+                    <td>34</td>
+                </tr>
+                <br>
+                <tr>
+                    <td colspan="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</td>
+                </tr>
+                <br>
+                <tfoot><th colspan="4"> Result = PASS</th>
+                </tfoot>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <!-- forms -->
+        <form action="process.php" method="Post">
+            <h1> Payment Form:</h1>
+            <h2>Contact Information</h2>
+            <div>
+                <label>First Name *</label>
+                <input type="text" required="" name="firstName" placeholder="Enter First name">
+            </div>
+            <br>
+            <div>  
+                <label>Last Name *</label>
+                <input type="text" required="" name="lastName" placeholder="Enter last name">
+            </div>
+         
+             <fieldset>
+                <legend>Gender</legend>
+                   <p>
+                    Male <input type="radio" name="gender" id="gender"> Female <input type="radio"name="gender" id="gender">
+                    </p>
+            </fieldset>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <p>
+                Address <textarea name="address" id="address" cols="20" rows="20"></textarea>
+            </p>
+            <br>
+            <div> 
+                <label>Email *</label>
+                <input type="email" required="" name="email" placeholder="Enter email ">
+            </div>
+            <p>
+                Pincode * <input type="number" required="" name="pincode" id="pincode"> 
+            </p>
+            <hr>
+            <h2>Payment Information</h2>
+            
+            <div>
+                <label>Card Type : </label>
+                <select name="card_type" id="card_type">
+                    <option value="">---Select a Card Type---</option>
+                    <option value="Visa"> Visa </option>
+                    <option value="EasyPaisa"> EasyPaisa </option>
+                    <option value= "Bank Account">Bank Account</option>
+                </select>
+            </div>
+            <p>
+                Card Number <input type="number" name="card_number" id="card_number">
+            </p>
+            <div>
+                <label>Expiration Date:</label>
+                <input type="date" name="Expiration">
+            </div>
+            <p>
+                CVV <input type="password" name="cvv" id="cvv">
+            </p>
+
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Pay Now">
+        </form>
+
+        <!-- Button -->
+        <button onclick="SomeFunc">Click me</button>
+        <br>
+
+        <!-- Image -->
+        <a href="download.jpg">
+            <center><img src="download1.jpg" alt="my sample image" width="400"></center>
+        </a>
+
+        <!-- Quotations -->
+        <blockquote cite="https://traversymedia.com"> A paragraph is a group of related sentences that support onemain idea. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next paragraph or section</blockquote>
+        <p><abbr title=" World wide web"> WWW </abbr> is awesome</p>
+        <p><cite>HTML crash course</cite> by brad Traversy</p>
+        <div style="margin-top:500px"> </div>
+    </body>
+</html>

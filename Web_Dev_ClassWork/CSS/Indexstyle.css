@@ -1,0 +1,217 @@
+/* {
+	margin: 0;
+	padding: 0;	 
+}
+*/
+body{
+	background-color: #f4f4f4 ;
+	color:#555555 ;
+
+	font-family: Apple Chancery, cursive;
+	font-size: 18px;
+	font-weight: normal;
+	/* same as above */
+	font:  normal 18px Apple Chancery, cursive;
+
+	line-height: 2.0em; /* separating lines*/
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: red;
+}
+a:active{
+	color: green;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+/* same as below line 131-136*/
+.button{
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: none ;
+}
+
+.button:hover{
+	background-color: red;
+	color: white;
+}
+.clr{
+	clear: both;
+}
+.box-1{
+	background-color: #333;
+	color: #fff;
+
+	border-top: 5px orangered solid;
+	border-bottom: 5px orangered solid;
+	border-right: 5px orangered solid;
+	border-left: 5px orangered solid;
+
+	border-width: 3px;
+	border-bottom-width: 7px ;
+	border-top-style: dotted;
+
+	/* same as above */
+	border: 5px orangered solid;	
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;	
+	padding: 20px;
+
+	margin-top: 20px;
+	margin: 20px 0;
+
+	border-radius: 15px; 
+}
+
+.box-2{
+	background-color: #333;
+	color: #fff;
+
+	border: 5px solid darkgreen ;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 15px; 
+}
+
+.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration:underline ;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 0.5m;
+
+}
+
+.box-2 h1{
+	font-family: Tahoma;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration:underline ;
+	letter-spacing: 0.2em;
+	word-spacing: 0.5m;
+}
+
+
+.categories{
+	border: 1px lightblue solid;
+	padding: 10px;
+	border-radius: 20px; 
+
+}
+
+.categories h2{
+	text-align: center;
+}
+
+.categories ul{
+	padding: 10px;
+	list-style: square;
+	list-style: none;
+}
+.categories li{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: solid darkgrey;
+	list-style-image: url('../css/images/tickmark.jpg');
+}
+.my-form{
+	padding: 15px;
+}
+.my-form.form-group{
+	padding-bottom: 15px;
+}
+.my-form label{
+	display: block;
+}
+
+.my-form  input[type="text"], .my-form textarea{
+	padding: 10px;
+	width: 100%;
+}
+
+.block{
+	float: left;
+	width: 33.3%;
+	border: 1px solid darkcyan;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main-block{
+	float: left;
+	width: 70%;
+	background-color: darkcyan;
+	color: black;
+	border: 2px solid black;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background-color: darkcyan;
+	border: 2px solid black;
+	color: black;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.p-box{
+	width: 800px;
+	height: 500px;
+	border: 2px solid black;
+	margin-top: 20px;
+	position: relative;
+	background-image: url('../css/images/download.jpeg');
+	background-repeat: no-repeat ;
+	background-position: 100px 300px;
+	background-position: center top;
+
+}
+
+.p-box h1{
+	color: black;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.p-box h2{
+	color: black;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.fix-me{
+	position: fixed;		
+	top: 550px;
+}
+.my-list li{
+	color: black;
+}
+.my-list li:first-child{
+	background: red;
+}
+.my-list li:last-child{
+	background: red;
+}
+.my-list li:nth-child(5){
+	background: yellow;
+}
+.my-list li:nth-child(even){
+	background: green;
+}

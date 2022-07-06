@@ -1,0 +1,19 @@
+body{
+	text-align: center;
+}
+h1{
+	font-size: 50px;
+	font-family: 'Anton', sans-serif;
+	color: rgb(253, 135, 0);
+	text-shadow: 3px 3px 3px black, 3px 3px 3px rgb(131, 0, 0), 3px 3px 3px rgb(19, 0, 187);
+	text-decoration: line-through;
+
+}
+p{
+	font-family: 'Bad Script', cursive;
+	color: rgb(64, 1, 94);
+	font-weight: 600;
+	text-align: left;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;	
+	text-transform: uppercase;
+}

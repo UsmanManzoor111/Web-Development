@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="PaymentForm.css">
+</head>
+<body>
+    <div class="container">
+        <form action="process.php" method="Post">
+            <h1 class="MainHeading"> Payment Form:</h1>
+            <h2>Contact Information</h2>
+            <div>
+                <label>First Name *</label>
+                <input type="text" required="" name="firstName" placeholder="Enter First name">
+            </div>
+            <br>
+            <div>  
+                <label>Last Name *</label>
+                <input type="text" required="" name="lastName" placeholder="Enter last name">
+            </div>
+        
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="gender"> Female <input type="radio"name="gender" id="gender">
+                    </p>
+            </fieldset>
+            <div>
+                <label>Message</label>
+                <textarea name="message" placeholder="Enter your Message"></textarea>
+            </div>
+            <p>
+                Address <textarea name="address" id="address" cols="20" rows="20" placeholder="Enter your Address"></textarea>
+            </p>
+            <br>
+            <div> 
+                <label>Email *</label>
+                <input type="email" required="" name="email" placeholder="Enter email ">
+            </div>
+            <p>
+                Pincode * <input type="number" required="" name="pincode" id="pincode"> 
+            </p>
+            <hr>
+            <h2>Payment Information</h2>
+            
+            <div>
+                <label>Card Type : </label>
+                <select name="card_type" id="card_type">
+                    <option value="">---Select a Card Type---</option>
+                    <option value="Visa"> Visa </option>
+                    <option value="EasyPaisa"> EasyPaisa </option>
+                    <option value= "Bank Account">Bank Account</option>
+                </select>
+            </div>
+            <p>
+                Card Number <input type="number" name="card_number" id="card_number">
+            </p>
+            <div>
+                <label>Expiration Date:</label>
+                <input type="date" name="Expiration">
+            </div>
+            <p>
+                CVV <input type="password" name="cvv" id="cvv">
+            </p>
+    
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Pay Now">
+        </form>   
+    </div>
+</body>
+</html>
